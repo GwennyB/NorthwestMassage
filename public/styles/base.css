@@ -1,5 +1,8 @@
 body {
+  background-color:#091b1b;
   background-image: url("../images/logo.jpg");
-  background-size: 100vw 100vh;
+  background-size: contain;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
