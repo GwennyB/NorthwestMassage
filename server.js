@@ -13,17 +13,16 @@ const app = express();
 app.use(cors());
 
 // establish static directory
-app.use(express.static('./public'));
+app.use(express.static(`${__dirname}/public`));
 
 // create home route
-app.get('/home', (req,res) => {
+app.get('/', (req,res) => {
   res.sendFile(`${__dirname}/public/index.html`);
 });
-
-
-
 
 // open port and write status to console
 app.listen(PORT, () => {
   console.log(`port ${PORT} open`);
 });
+
+
