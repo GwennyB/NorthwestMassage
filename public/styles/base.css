@@ -1,7 +1,12 @@
 body {
   background-color:#091b1b;
+
+}
+
+main {
+  color: white;
   background-image: url("../images/logo.jpg");
-  background-size: contain;
+  background-size: 100vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
