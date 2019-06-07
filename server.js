@@ -16,7 +16,7 @@ app.use(cors());
 app.use(express.static('./public'));
 
 // create home route
-app.get('/home', (req,res) => {
+app.get('/', (req,res) => {
   res.sendFile(`${__dirname}/public/index.html`);
 });
 
